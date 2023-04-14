@@ -11,66 +11,70 @@
 
 <body>
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
+        <ul class="cabecalho_menu_geral">
+
+
+            <li class="li"><a class="cabecalho__menu__link" href="index.html">Home</a></li>
+
             <div class="dropdown">
-                <button class="dropbtn">Disciplinas
-                  <i class="fa fa-caret-down"></i>
-                </button>
+                <li class="li"><button class="dropbtn">Disciplinas
+                        <i class="fa fa-caret-down"></i>
+                    </button></li>
                 <div class="dropdown-content">
-                  <a href="grid.html">Caléndario Escolar 2023</a>
-                  <a href="#">1° Semestre</a>
-                  <a href="#">2° Semestre</a>
-                  <a href="#">3° Semestre</a>
-                  <a href="#">4° Semestre</a>
-                  <a href="#">5° Semestre</a>
-                  <a href="#">6° Semestre</a>
+                    <a href="grid.html">Caléndario Escolar 2023</a>
+                    <a href="#">1° Semestre</a>
+                    <a href="#">2° Semestre</a>
+                    <a href="#">3° Semestre</a>
+                    <a href="#">4° Semestre</a>
+                    <a href="#">5° Semestre</a>
+                    <a href="#">6° Semestre</a>
 
                 </div>
-              </div>
-              <a class ="cabecalho__menu__link" href="extra.html"> Material Extra </a>
-              <a class ="cabecalho__menu__link" href="internship.html">Estágio</a>
-              <a class ="cabecalho__menu__link" href="contact.html">Fale Conosco</a>
-
-        </nav>
+            </div>
+            <li class="li"><a class="cabecalho__menu__link" href="extra.html"> Material</a></li>
+            <li class="li"><a class="cabecalho__menu__link" href="internship.html">Estágio</a></li>
+            <li class="li"><a class="cabecalho__menu__link" href="contact.html">Contato</a></li>
+            
     </header>
 
 
     <main class="contato">
+        <div id="texto-contato">
+            <h1 class="contato-titulo">Fale com a gente</h1>
+            <p class="contato-texto">Preencha o formulário ao lado, sugerindo alguma melhoria ou mesmo apontado alguma
+                duvida sobre o curso de ADS!</p>
+        </div>
 
-                <h1 class="contato-titulo" >Fale coma a gente</h1>
-                <p class="contato-texto" >Preencha o formulário ao lado, sugerindo alguma melhoria ou mesmo apontado alguma duvida sobre o curso de ADS!</p>
-         
         <div class="formulario">
             <section class="contato-conteudo">
-                <form  method="post"> 
+                <form method="post">
                     <p class="form-titulo">Preencha com seus Dados</p>
-            
-                     <div class="field-">
+    
+                    <div class="field-">
                         <label class="campo" for="nome">Seu Nome*:</label>
-                        <input type="text" id="nome" name="nome"  required maxlength="100" >
+                        <input type="text" id="nome" name="nome" required maxlength="100">
                     </div>
-            
+
                     <div class="field">
                         <label class="campo" for="telefone">Seu Telefone*:</label>
-                        <input type="text" id="telefone" name="telefone"  required >
+                        <input type="text" id="telefone" name="telefone" required>
                     </div>
-    
+
                     <div class="field">
                         <label class="campo" for="email">Seu E-Mail*:</label>
-                        <input type="email" id="email" name="email" required  maxlength="100">
-                    </div>      
-            
-                
+                        <input type="email" id="email" name="email" required maxlength="100">
+                    </div>
+
+
                     <div class="field">
-                        <legend class="campo">Périodo do Curso:*</legend>
+                        <legend class="campo">Périodo do Curso: </legend>
                         <p>
-                            <input type="checkbox" value="on"/>
+                            <input type="checkbox" value="on" />
                             <label class="campo" for="adm">Manhã</label>
-                            <input type="checkbox" value="on"/>
-                            <label class="campo"for="adm">Tarde</label>
-                            <input type="checkbox" value="on"/>
-                            <label class="campo"for="adm">Noite</label>
+                            <input type="checkbox" value="on" />
+                            <label class="campo" for="adm">Tarde</label>
+                            <input type="checkbox" value="on" />
+                            <label class="campo" for="adm">Noite</label>
                         </p>
                     </div>
 
@@ -86,13 +90,13 @@
                             <option value="segundo">6°Semestre</option>
                         </select>
                     </div>
-        
+
                     <div class="field">
-                        <label  class="campo"for="mensagem">Sua mensagem*:</label>
-                        <textarea name="mensagem" id="mensagem"  required maxlength="200"></textarea>
+                        <label class="campo" for="mensagem">Sua mensagem*:</label>
+                        <textarea name="mensagem" id="mensagem" required maxlength="200"></textarea>
                     </div>
-    
-                    <a href="#" class="button" id="button">Enviar</a>
+
+                    <a href="#" class="button" id="button">ENVIAR</a>
                 </form>
 
             </section>
@@ -100,24 +104,22 @@
     </main>
 
 
-
-
-
-
     <footer class="rodape">
         <p class="rodape-texto"><strong>Faculdade de Tecnologia de São Paulo - 2023</strong></p>
         <p class="rodape-texto"><strong>Siga a gente:</strong></p>
-        <div class="icones">    
+        <div class="icones">
             <ul class="socials">
-            <li class="icone"><a href="https://www.linkedin.com/school/faculdade-de-tecnologia-de-s%C3%A3o-paulo-fatec-sp/"><img src="./assets/linkedin.png" width="45" height="45"></a></li>
-            <li class="icone"><a href="https://t.me/joinchat/W7xEaJKNRmbt4vve"><img src="./assets/telegram.png" width="45" height="45"></i></a></li>
-            <li class="icone"><a href="https://www.youtube.com/@FatecSPOficial"><img src="./assets/youtube.png" width="45" height="45"></i></a></li>
+                <li class="icone"><a
+                        href="https://www.linkedin.com/school/faculdade-de-tecnologia-de-s%C3%A3o-paulo-fatec-sp/"><img
+                            src="./assets/linkedin.png" width="45" height="45"></a></li>
+                <li class="icone"><a href="https://t.me/joinchat/W7xEaJKNRmbt4vve"><img src="./assets/telegram.png"
+                            width="45" height="45"></i></a></li>
+                <li class="icone"><a href="https://www.youtube.com/@FatecSPOficial"><img src="./assets/youtube.png"
+                            width="45" height="45"></i></a></li>
             </ul>
         </div>
-   
+
     </footer>
 </body>
 
 </html>
-
-
