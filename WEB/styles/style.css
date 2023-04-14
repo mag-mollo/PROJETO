@@ -1,0 +1,955 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+/*  */
+:root {
+    --cor-primaria:#0B2447;
+    --cor-secundaria: white; 
+    --cor-terciaria: #576CBC;
+    --cor-hover: #A5D7E8;
+    --cor-texto:white;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+
+.cabecalho_menu_geral{
+   list-style: none;
+   padding: 0;
+   justify-content: space-between;
+}
+
+.li{
+   padding: 0 20px;
+   cursor: pointer;
+}
+
+
+
+.cabecalho__menu , .cabecalho_menu_geral{
+    display: flex;
+
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin-top: 20px;
+    background-color: var(--cor-terciaria);    
+}
+
+.cabecalho_menu_geral{
+   flex-direction: row;
+   background-color: var(--cor-terciaria);    
+}
+
+
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 0.95rem;
+    color: var(--cor-texto);
+   
+    
+    
+    
+
+    
+}
+
+.cabecalho__menu__link:hover{
+   text-decoration: underline;
+  
+ }
+
+.button{
+   background-color: transparent;
+   border: var(--cor-terciaria);
+   color: var(--cor-texto);
+   font-size: 1.5rem;
+   display: none;
+   justify-content: ;
+
+}
+
+@media(max)
+
+/* Dropdown button */
+.dropdown  {
+    font-family: var(--fonte-secundaria);
+    font-size: 0.95rem;
+    font-weight: 600;   
+    
+    
+    
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  
+
+  .dropbtn{
+  
+    font-family: var(--fonte-secundaria);
+    font-size: 0.95rem;
+    background-color: var(--cor-primaria);
+   border: none;
+   color: var(--cor-texto);
+  
+   
+  }
+
+  .dropbtn:hover{
+   text-decoration: underline;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cor-primaria);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: var(--cor-secundaria);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color:var(--cor-terciaria);
+    
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+ 
+
+
+  .conteudo{
+      padding: 5% 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 82px;
+
+}
+
+.conteudo-principal{
+   width: 50%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   
+
+}
+
+.conteudo-principal-escrito{
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+   
+
+
+}
+
+.conteudo-principal-escrito-titulo{
+   font-family: var(--fonte-primaria);
+   font-weight: 400;
+   font-size: 2.5rem;
+   color: var(--cor-texto);
+   
+   
+  
+   
+}
+.conteudo-principal-escrito-subtitulo{
+   font-family: var(--fonte-secundaria);
+   font-weight: 20;
+   font-size: 2.20rem ;
+   color:var(--cor-texto);
+   text-align: left;
+
+   
+}
+
+.conteudo-principal-imagem{
+  width: 50%;
+   margin-top: 48px;
+  
+}
+
+
+.rodape{
+ 
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    justify-content: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.socials{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+
+    
+    
+   
+   
+}
+
+.icone{
+   margin-top: 10px;
+   padding: 0 5px;
+   
+}
+
+
+/* CURSO CSS */
+
+
+
+.conteudo-curso{
+    display: flex;
+    flex-direction: column;
+ }
+ .conteudo-curso-texto{
+    justify-content: center;
+ 
+ 
+ }
+ .conteudo-curso-texto-titulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+    text-align: center;
+    padding-top: 50px;
+ }
+ 
+ .conteudo-curso-texto-subtitulo{
+    font-family: var(--fonte-secundaria);
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+ 
+ }
+ .row{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .card1 , .card2 , .card3{
+    border-radius: 5px;
+   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+   padding: 15px;
+   margin: 30px;
+   width: 500px;
+    height: 200px;
+   transition: all 0.3s ease-out;
+   border-left: 3px solid var(--cor-terciaria);
+   text-align: justify;
+   
+ 
+ }
+ 
+ 
+ .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+   
+  .card-titulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    letter-spacing: normal;
+    line-height: 2em;
+    margin-bottom: 5px;
+    
+    
+    
+  }
+ 
+ 
+    .small{
+    text-align: justify;
+    font-family: var(--fonte-secundaria);
+    color:var(--cor-texto);
+
+  }
+ .conteudo-curso-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #3C486B;
+    box-shadow: var(--cor-hover);
+    border: 1px solid var(--cor-texto);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--cor-texto)
+    
+    
+  }
+  
+  .conteudo-curso-tabela th, .conteudo-curso-tabela td {
+    padding: 0.5rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--cor-primaria);
+    text-align: center;
+  }
+  
+  .conteudo-curso-tabela th {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .tabela-titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 100px;
+ 
+  }
+ 
+  .conteudo-curso-sobre-celula{
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+ 
+  }
+  .conteudo-curso-sobre-titulo{
+    font-family: var(--fonte-secundaria);
+    font-weight:  20;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+ 
+  .conteudo-curso-tabela-titulo{
+    font-family: var(--fonte-secundaria);
+    font-weight: 40;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+ 
+  .conteudo-curso-sobre-campo{
+    font-family: var(--fonte-secundaria);
+    font-weight: 20;
+    font-size: 1.5rem;
+    text-align: center;
+ 
+  }
+ 
+
+  /* DISCIPLINAS */
+  /* CALENDÁRIO ESCOLAR */
+ 
+  .calendario{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.conteudo-calendario {
+   border-radius: 5px; 
+  padding: 15px;
+  margin: 30px;
+  width: 200x;
+   height: 220px;
+  border-left: 3px solid var(--cor-terciaria);
+  text-align: justify;
+
+}
+.conteudo-calendario-imagem{
+   border-radius: 5px;
+   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+   padding: 15px;
+   margin: 30px;
+   width: 700px;
+   height: 750px;
+   border-left: 3px solid var(--cor-terciaria);
+   text-align: justify;
+   cursor: pointer;
+  
+}
+
+ .calendario-titulo {
+   font-family: var(--fonte-primaria);
+   font-size: 1.5rem;
+   line-height: 2em;
+   
+ }
+ .calendario-texto{
+   font-family: var(--fonte-secundaria);
+ }
+
+
+  /* MATERIAL EXTRA */
+
+  .titulo{
+   font-family: var(--fonte-primaria) ; 
+   font-size: 1.5rem;
+   text-align: center;
+   margin:1%;
+   
+}
+.subtitulo{
+   font-family: var(--fonte-secundaria) ; 
+   margin-top: 5px;
+   font-size: 1.5rem;
+}
+
+
+.links-material{
+   margin-top: 30px;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   margin-bottom :2px;
+   color: var(--cor-texto);
+   
+}
+
+.links{
+   color: var(--cor-texto);
+   font-family: var(--fonte-secundaria);
+   text-decoration: underline;
+   
+
+}
+.links:hover{
+   text-decoration: underline;
+   background-color: var(--cor-primaria);
+
+}
+
+
+
+.lista-livros1{
+   padding-bottom: 10%;
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   padding-top: 2%;
+
+
+}
+.lista-livros2{
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   padding-bottom: 10%;
+}
+
+.lista-mapa1{
+   padding-top: 5%;
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   padding-bottom: 5px;
+}
+   .lista-mapa2{
+      padding-top:5%;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 5px;
+   }
+
+   .material-texto{
+      font-family: var(--fonte-secundaria);
+      font-weight: 400;
+      font-size: 1.25rem;
+      color: var(--cor-texto);
+      flex-wrap: wrap;
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 5%;
+      
+      
+
+   }
+
+
+   
+
+
+
+.mapa{
+   margin-bottom: 50px;
+   border-top: 0.9px solid var(--cor-secundaria);
+}
+.ebook{
+   margin-bottom: 50px;
+   border-top: 0.9px solid var(--cor-secundaria);
+}
+
+
+.legenda{
+   padding-top: 5px;
+   font-family: var(--fonte-secundaria);
+   font-size: 0.9rem;
+   font-weight: 100px;
+   
+
+}
+
+.link-livro{
+   font-weight: bold;
+   color: var(--cor-secundaria);
+   font-family: var(--fonte-principal);
+   padding: auto;
+}
+.link-livro:hover{
+   text-decoration: underline;
+
+}
+
+
+
+
+
+   
+
+   /* estágio  */
+
+
+   .estagio-titulo {
+   margin-top: 30px;
+   margin-bottom: 10px;
+   font-family:var(--fonte-primaria);
+   font-weight: 400;
+   font-size: 1.5rem;
+    color: var(--cor-texto);
+    flex-wrap: wrap;
+    text-align: center;
+    
+
+    }
+
+    .estágio-subtitulo{
+   
+   font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+    flex-wrap: wrap;
+    text-align: center;
+
+    }
+
+    
+   .vaga-estagio{
+      font-family:var(--fonte-primaria);
+      font-weight: 400;
+      font-size: 15px;
+      color: var(--cor-texto);
+      flex-wrap: wrap;
+      text-align: center;
+      text-align: justify;
+      padding: auto;
+
+   }
+
+   .video{
+      margin-left:auto;
+      margin-right:auto;
+      display: block;
+      clear: both;
+   }
+   .botao{
+      margin-top: 15px;
+      margin-bottom: 15px;
+      background-color: var(--cor-terciaria);
+      color: var(--cor-texto);
+      font-size: 1.5rem;
+      border-radius:5px;
+      font-family: var(--fonte-primaria);
+      cursor: pointer;
+   }
+
+
+
+
+   .vaga-estagio1 , .vaga-estagio2 , .vaga-estagio3 , .vaga-estagio4{
+      border-radius: 5px;
+      box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+      padding: 15px;
+      margin: 30px;
+      width: 900px;
+      height: 600px;
+      border-left: 3px solid var(--cor-terciaria);
+      text-align: justify;
+      justify-content: center;
+    
+    }
+
+
+
+
+   .vaga-titulo{
+   font-family: var(--fonte-primaria);
+   font-size: 1.5rem;
+   }
+
+   .vaga-texto{
+   font-family: var(--fonte-secundaria);
+   }
+
+
+
+
+
+ /* CONTATO */
+
+
+ .contato{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  flex-direction: column;
+
+}
+
+.contato-texto {
+   
+  width:100%;
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+
+}
+
+
+
+
+ .contato-titulo {
+   font-family: var(--fonte-primaria);
+   font-size: 1.5rem;
+   line-height: 2em;
+   text-align: center;
+   
+ }
+ .contato-texto{
+   font-family: var(--fonte-secundaria);
+   justify-content: center;
+   flex-direction: column;
+   margin-bottom: 15px;
+ }
+
+/* Style for form container */
+#formulario {
+   margin-top: 20px;
+   width: 100%;
+   font-family: var(--fonte-secundaria);
+   font-size: 14px;
+   color: var(--cor-texto);
+   margin-bottom: 50px;
+ }
+ 
+ /* Style for form title */
+ .form-titulo {
+   font-family: var(--fonte-primaria);
+   text-align:center;
+   font-size: 1.5rem;
+ }
+ 
+ /* Style for form fields */
+ .field {
+   margin-bottom: 15px;
+   margin-top: 10px;
+ }
+ 
+ .campo {
+   display: block;
+   margin-bottom: 5px;
+   font-family: var(--fonte-secundaria);
+   
+ }
+ 
+ /* Style for input fields */
+ input[type="text"],
+ input[type="email"],
+ select,
+ textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid var(--cor-texto);
+   border-radius: 4px;
+   box-sizing: border-box;
+   font-family: var(--fonte-secundaria);
+   font-size: 14px;
+   color: var(--cor-primaria);
+   direction: left;
+   
+ }
+ 
+ /* Style for checkbox inputs */
+ input[type="checkbox"] {
+   margin-right: 5px;
+ }
+ 
+ /* Style for submit button */
+ .button {
+   margin-top: 2px;
+   display: block;
+   width: 100%;
+   height: 40px;
+   font-family: var(--fonte-primaria);
+   background-color: var(--cor-terciaria);
+   color: var(--cor-texto);
+   text-align: center;
+   text-decoration: none;
+   border-radius: 4px;
+   cursor: pointer;
+   margin-bottom: 20px;
+ }
+ 
+ 
+/* media query */
+
+@media (max-width: 1200px){
+
+   .cabecalho{
+      padding: 2%;
+
+
+   }
+   .cabecalho__menu{
+      justify-content: center;
+   }
+   .conteudo{
+      flex-direction: column;
+      padding:5%;
+   }
+
+   .conteudo-principal{
+      width:  auto;
+   }
+
+   .conteudo-principal-escrito-titulo{
+      margin-bottom: 15px;
+   }
+
+   .conteudo-principal-escrito-subtitulo{
+      text-align: center;
+   }
+}
+
+@media (max-width: 1100px){
+
+
+   .material-texto{
+      width:  auto;
+      padding: none;
+      margin: none;
+   }
+   .titulo{
+      margin: none;
+      padding: none;
+   }
+
+   .ebook{
+      width:  auto;
+      padding: none;
+   }
+
+
+   .lista-livros{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+
+   .lista-livros1{
+      list-style: none;
+      display: flex;
+      flex-direction: column;      
+      
+      
+
+   }
+
+   .legenda{
+      margin-bottom: 10%;
+
+   }
+
+   .lista-livros2{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: none;
+    
+
+   }
+   
+
+   .mapa{
+      width:  auto;
+      margin-bottom: 2%;
+   }
+
+   .lista-mapa{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .lista-mapa1{
+      padding: none;
+      list-style: none;
+      display: flex;
+      flex-direction: column; 
+   }
+
+
+
+   .lista-mapa2{
+      padding: none;
+      list-style: none;
+      display: flex;
+      flex-direction: column; 
+      
+   }
+
+   .map{
+      margin-bottom: 10%;
+   }
+
+}
+  
+   @media (max-width: 1100px){
+
+
+      .calender{
+      width:  auto;
+      margin-bottom: 2%;
+;
+      }
+
+
+      .calendario{
+         width:  auto;
+         flex-direction: column;
+      }
+
+      .conteudo-calendario{
+         padding: 15px;
+         margin: 30px;
+         width: 600x;
+         text-align: justify;
+         flex-direction: column;
+         height: 100px; 
+         display: flex;
+         text-align: center;
+         direction: center;
+      }
+
+      .conteudo-calendario-imagem{
+       display: flex;
+      justify-content: center;
+      align-items: center;
+         
+      }
+
+      
+   }
+   
+
+   @media (max-width: 700px){
+
+
+      cabecalho {
+         display: none;
+       }
+       
+       .cabecalho__menu{
+         width: auto;
+         display: none;
+       }
+       
+       
+     
+
+     
+   
+    
+    
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 0.95rem;
+    color: var(--cor-texto);
+    flex-direction: row;
+    background-color: var(--cor-primaria);
+    padding: none;
+    text-decoration: none;
+    text-align: center;
+    width: auto;
+    text-align: justify;
+
+   
+}
+
+
+
+@media (max-width: 400px){
+
+
+      .contato{
+         width:  auto;
+         display: flex;
+        
+      }
+
+      .contato-conteudo{
+         padding: 15px;
+         margin: 30px;
+         width: 600x;
+         text-align: justify;
+         
+         height: 100px; 
+         display: flex;
+         text-align: center;
+         direction: center;
+      }
+
+      
+}
+
